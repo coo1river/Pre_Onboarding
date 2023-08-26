@@ -1,0 +1,227 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@400;500&display=swap");
+
+:root {
+  --main-font: "Oswald", sans-serif;
+  --sub-font: "Lato", sans-serif;
+  --point-color: #ff565c;
+}
+
+body,
+h1,
+h2,
+h3,
+div,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  color: unset;
+  text-decoration: none;
+  border: unset;
+  background-color: unset;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* reset */
+
+body {
+  background-color: #f9fafc;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+.header {
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 63px;
+
+  padding: 20px 38px;
+
+  border-bottom: 3px solid #ebebeb;
+}
+
+.logo_menubar {
+  display: flex;
+}
+
+.logo {
+  margin-top: 12px;
+}
+
+.menu_list {
+  display: flex;
+  gap: 59px;
+
+  opacity: 0.2;
+  color: #1d1f24;
+  letter-spacing: 1.75px;
+}
+
+nav {
+  display: flex;
+}
+
+.menu_btn {
+  margin: 17px 20px;
+}
+
+/* header */
+
+main {
+  padding: 40px 24px;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "a a a b"
+    "a a a c"
+    "d e e c"
+    "d f g i";
+}
+
+main > article {
+  margin: 15px;
+}
+
+article h3 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.471px;
+  text-transform: uppercase;
+  line-height: 49px;
+}
+
+article > p {
+  font-family: var(--sub-font);
+}
+
+.article_1 {
+  grid-area: a;
+  background-image: url(../img/green-chameleon-176136.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.article_1 button {
+  width: 107px;
+  height: 40px;
+  margin-bottom: 40px;
+
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  padding: 10px 25px;
+  background-color: var(--point-color);
+}
+
+.article_1 h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.article_1 > p {
+  width: 483px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.article_2 {
+  background-image: url(../img/Card.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: b;
+}
+
+.article_3 {
+  grid-area: c;
+
+  background-color: var(--point-color);
+}
+
+.article_3 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 25px;
+}
+
+.article_3 h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 49px;
+}
+
+.article_3 p {
+  font-family: var(--sub-font);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.article_3 a {
+  text-align: center;
+  padding: 18px 63.5px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.article_4 {
+  grid-area: d;
+  background-color: white;
+  color: black;
+
+  padding: 28px;
+}
+
+.article_4 h3 {
+  font-size: 14px;
+  letter-spacing: 1.531px;
+}
+
+.article_4 ol {
+  font-family: var(--sub-font);
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+}
+
+.article_4 ol li {
+  padding-left: 26px;
+  margin-bottom: 56px;
+}
+
+.article_4 ol li::marker {
+  opacity: 0.1662;
+}
+
+.article_5 {
+  grid-area: e;
+}
+
+.article_6 {
+  grid-area: f;
+}
