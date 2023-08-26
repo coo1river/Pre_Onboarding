@@ -116,6 +116,7 @@ article > p {
 
 .article_1 {
   grid-area: a;
+
   background-image: url(../img/green-chameleon-176136.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,16 +128,18 @@ article > p {
   align-items: center;
 }
 
-.article_1 button {
+.article_1 span {
   width: 107px;
   height: 40px;
+  background-color: var(--point-color);
   margin-bottom: 40px;
 
   font-family: var(--main-font);
+  text-align: center;
+  font-size: 14px;
+  line-height: 40px;
   text-transform: uppercase;
   letter-spacing: 1.75px;
-  padding: 10px 25px;
-  background-color: var(--point-color);
 }
 
 .article_1 h3 {
@@ -183,10 +186,11 @@ article > p {
 }
 
 .article_3 a {
+  width: 210px;
   text-align: center;
-  padding: 18px 63.5px;
-
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 18px 0;
+  outline: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .article_4 {
@@ -215,11 +219,56 @@ article > p {
 }
 
 .article_4 ol li::marker {
-  opacity: 0.1662;
+  color: lightgray;
 }
 
 .article_5 {
   grid-area: e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-image: url(../img/Card2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article_5 > span {
+  background-color: var(--point-color);
+  width: 157px;
+  height: 40px;
+
+  text-align: center;
+  line-height: 40px;
+}
+
+.article_5 p {
+  width: 484px;
+  padding-left: 40px;
+  text-align: left;
+
+  font-size: 24px;
+  word-wrap: break-word;
+}
+
+.share_comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding-left: 40px;
+}
+
+.share_comment span {
+  background-color: unset;
+  font-family: var(--sub-font);
+}
+
+.share_comment img {
+  vertical-align: middle;
+
+  position: relative;
+  padding-right: 11px;
 }
 
 .article_6 {
