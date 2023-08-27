@@ -88,14 +88,15 @@ main {
   color: white;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
 
   grid-template-areas:
     "a a a b"
     "a a a c"
     "d e e c"
-    "d f g i";
+    "d f g h";
 }
 
 main > article {
@@ -123,16 +124,25 @@ article > p {
 
   display: flex;
   flex-direction: column;
+  gap: 40px;
 
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.article_1 span {
+.art1_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  margin-top: 140px;
+}
+
+.article_label {
   width: 107px;
   height: 40px;
   background-color: var(--point-color);
-  margin-bottom: 40px;
 
   font-family: var(--main-font);
   text-align: center;
@@ -147,17 +157,39 @@ article > p {
   margin-bottom: 5px;
 }
 
-.article_1 > p {
+.article_1 div > p {
   width: 483px;
+  margin: auto;
+
   text-align: center;
+  font-family: var(--sub-font);
   opacity: 0.7;
 }
 
+.article_1 .share_comment {
+  margin-top: 140px;
+}
+
 .article_2 {
+  grid-area: b;
   background-image: url(../img/Card.png);
   background-repeat: no-repeat;
   background-size: cover;
-  grid-area: b;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.article_2 p {
+  width: 245px;
+  margin-left: 25px;
+
+  font-size: 24px;
+}
+
+.article_2 .share_comment {
+  padding-left: 28px;
 }
 
 .article_3 {
@@ -273,4 +305,54 @@ article > p {
 
 .article_6 {
   grid-area: f;
+
+  background-image: url(../img/Card3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article_6,
+.article_7,
+.article_8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.article_6 p,
+.article_7 p,
+.article_8 p {
+  width: 245px;
+  padding-left: 25px;
+  font-size: 24px;
+}
+
+.article_7 {
+  grid-area: g;
+
+  background-image: url(../img/Card4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article_8 {
+  grid-area: h;
+
+  background-image: url(../img/Card5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  display: flex;
+  background: #1d1f24;
+}
+
+footer ul {
+  width: 657px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 111px;
+
+  color: white;
 }
