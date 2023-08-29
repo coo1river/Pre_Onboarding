@@ -349,9 +349,11 @@ footer {
 }
 
 footer ul {
-  width: 657px;
+  width: 640px;
+  height: 54px;
   display: flex;
-  flex-wrap: nowrap;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 111px;
 
   color: white;
