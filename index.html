@@ -12,44 +12,53 @@
 
 <body>
   <header>
+    <div class="header_left">
+      <h1>
+        <img class="logo" src="./img/Logo.svg" alt="">
+      </h1>
 
-    <div class="header">
-      <div class="logo_menubar">
-        <h1>
-          <img class="logo" src="./img/Logo.svg" alt="">
-        </h1>
-
-        <nav>
-          <ul class="menu_list">
-            <li>TECHNOLOGY</li>
-            <li>IDEAS</li>
-            <li>LEADERSHIP</li>
-            <li>VIDEO</li>
-            <li>NEWS</li>
-            <li>FINANCE</li>
-            <li>ENTERTAINMENT</li>
-          </ul>
-        </nav>
-      </div>
-      <img class="menu_btn" src="./img/Menu icon.svg" alt="">
+      <nav>
+        <ul class="menu_list">
+          <li><a>TECHNOLOGY</a></li>
+          <li><a>IDEAS</a></li>
+          <li><a>LEADERSHIP</a></li>
+          <li><a>VIDEO</a></li>
+          <li><a>NEWS</a></li>
+          <li><a>FINANCE</a></li>
+          <li><a>ENTERTAINMENT</a></li>
+        </ul>
+      </nav>
     </div>
+    <button>
+      <img class="menu_btn" src="./img/Menu icon.svg" alt="메뉴 버튼">
+    </button>
   </header>
   <!-- //header -->
 
   <!-- main -->
   <main>
+    <h2 claas="a11y-hidden">main content</h2>
+
     <article class="article_1">
+      <h3 class="a11y-hidden">article 1</h3>
       <div class="art1_box">
-        <div class="article_label">Finance</div>
+        <strong class="article_label">Finance</strong>
         <div>
-          <h3>
-            <p>This tie brand is bucking the retail</p>
-            <p>apocalypse with a massive store expansion</p>
-          </h3>
-          <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun. The truth
+          <p class="article_strong">
+            <strong>
+              This tie brand is bucking the retail
+            </strong>
+            <strong>
+              apocalypse with a massive store expansion
+            </strong>
+          </p>
+          <p class="article_content">
+            There is a lot of exciting stuff going on in the stars above us that make astronomy
+            so much fun. The truth
             is
             the
-            universe is a constantly changing, moving.</p>
+            universe is a constantly changing, moving.
+          </p>
         </div>
       </div>
       <div class="share_comment">
@@ -69,7 +78,8 @@
     </article>
 
     <article class="article_2">
-      <div class="article_label">Finance</div>
+      <h3 class="a11y-hidden">article 2</h3>
+      <strong class="article_label">Finance</strong>
       <p>
         Unmatched Toner Cartridge Quality: 20% Less Than OEM Price
       </p>
@@ -90,8 +100,12 @@
     </article>
 
     <article class="article_3">
+      <h3 class="a11y-hidden">article 3</h3>
       <div>
-        <h3>This tie brand is bucking the retail apocalypse with a massive store expansion</h3>
+        <p class="article_strong">
+          <strong>This tie brand is bucking the retail apocalypse with a massive store
+            expansion</strong>
+        </p>
         <p>The universe is constantly changing, moving. Some would say it’s a “living” thing because you never know what
           you
           are going to see on any given night.</p>
@@ -112,9 +126,10 @@
     </article>
 
     <article class="article_5">
-      <span>
+      <h3 class="a11y-hidden">article 5</h3>
+      <strong class="article_label">
         Entertainment
-      </span>
+      </strong>
       <p>
         Here’s The Difference Between Used, Refurbished, Remarketed, And Rebuilt Electronic Equipment
       </p>
@@ -135,7 +150,8 @@
       </div>
     </article>
     <article class="article_6">
-      <div class="article_label">Finance</div>
+      <h3 class="a11y-hidden">article 6</h3>
+      <strong class="article_label">Finance</strong>
       <p>
         Optimize Your PC’s Performance With These 3 Programs
       </p>
@@ -154,8 +170,10 @@
         </span>
       </div>
     </article>
+
     <article class="article_7">
-      <div class="article_label">Finance</div>
+      <h3 class="a11y-hidden">article 7</h3>
+      <strong class="article_label">Finance</strong>
       <p>
         Search Engine Optimization And Advertising
       </p>
@@ -174,8 +192,10 @@
         </span>
       </div>
     </article>
+
     <article class="article_8">
-      <div class="article_label">Finance</div>
+      <h3 class="a11y-hidden">article 8</h3>
+      <strong class="article_label">Finance</strong>
       <p>
         Where To Find Unique Myspace Layouts
       </p>
@@ -199,36 +219,36 @@
 
   <!-- footer -->
   <footer>
-    <div class="footer_menu">
+    <div class="footer_left">
       <div class="footer_logo">
-        <img src="./img/Logo2.svg" alt="">
+        <img src="./img/Logo2.svg" alt="로고 이미지">
         <p>© 2018 Deck </p>
         <p> Component based UI Kit</p>
-
       </div>
-      <ul>
-        <li>TECHNOLOGY</li>
-        <li>LEADERSHIP</li>
-        <li>NEWS</li>
-        <li>ENTERTAINMENT</li>
-        <li>IDEAS</li>
-        <li>VIDEO</li>
-        <li>FINANCE</li>
+
+      <ul class="footer_menu">
+        <li><a>TECHNOLOGY</a></li>
+        <li><a>LEADERSHIP</a></li>
+        <li><a>NEWS</a></li>
+        <li><a>ENTERTAINMENT</a></li>
+        <li><a>IDEAS</a></li>
+        <li><a>VIDEO</a></li>
+        <li><a>FINANCE</a></li>
       </ul>
-    </div>
 
+      <div class="footer_right">
+        <div class="email_sns">
+          <span>Follow us:</span>
+          <a href="#"><img src="./img/instagram.svg" alt="인스타그램 링크"></a>
+          <img src="./img/pinterest.svg" alt="핀터레스트 링크">
+          <a href="#"><img src="./img/twitter.svg" alt="트위터 링크"></a>
+          <a href="#"><img src="./img/facebook.svg" alt="페이스북 링크"></a>
+        </div>
 
-    <div class="footer_right">
-      <div class="email_sns">
-        <span>Follow us:</span>
-        <img src="./img/instagram.svg" alt="">
-        <img src="./img/pinterest.svg" alt="">
-        <img src="./img/twitter.svg" alt="">
-        <img src="./img/facebook.svg" alt="">
-      </div>
-      <div class="email_input_btn">
-        <input class="email_input" type="email" placeholder="Your E-mail">
-        <button class="email_btn" type="submit">SUBSCRIBE</button>
+        <form class="email_form">
+          <input class="email_input" type="email" placeholder="Your E-mail">
+          <button class="email_btn" type="submit">SUBSCRIBE</button>
+        </form>
       </div>
     </div>
   </footer>

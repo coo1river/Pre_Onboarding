@@ -15,7 +15,8 @@ div,
 p,
 a,
 button,
-input {
+input,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -47,6 +48,17 @@ button {
   cursor: pointer;
 }
 
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 /* reset */
 
 body {
@@ -56,7 +68,7 @@ body {
   font-weight: 500;
 }
 
-.header {
+header {
   background-color: white;
 
   display: flex;
@@ -68,16 +80,18 @@ body {
   border-bottom: 3px solid #ebebeb;
 }
 
-.logo_menubar {
-  display: flex;
-}
-
 .logo {
   margin-top: 12px;
 }
 
+.header_left {
+  display: flex;
+  gap: 63px;
+}
+
 .menu_list {
   display: flex;
+  align-items: center;
   gap: 59px;
 
   opacity: 0.2;
@@ -91,6 +105,7 @@ nav {
 
 .menu_btn {
   margin: 17px 20px;
+  margin-left: auto;
 }
 
 /* header */
@@ -152,29 +167,37 @@ article > p {
 }
 
 .article_label {
-  width: 107px;
-  height: 40px;
+  width: fit-content;
+  padding: 9px 25px;
   background-color: var(--point-color);
 
   font-family: var(--main-font);
+  font-weight: normal;
   text-align: center;
   font-size: 14px;
-  line-height: 40px;
+
   text-transform: uppercase;
   letter-spacing: 1.75px;
 }
 
-.article_1 h3 {
+.article_strong strong {
+  display: block;
+
+  font-size: 32px;
   text-align: center;
-  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 49px;
 }
 
-.article_1 div > p {
+.article_content {
   width: 483px;
   margin: auto;
 
   text-align: center;
   font-family: var(--sub-font);
+  font-size: 18px;
+  line-height: 26px;
   opacity: 0.7;
 }
 
@@ -223,10 +246,8 @@ article > p {
   line-height: 49px;
 }
 
-.article_3 p {
-  font-family: var(--sub-font);
-  font-size: 18px;
-  line-height: 30px;
+.article_3 strong {
+  text-align: left;
 }
 
 .article_3 a {
@@ -275,15 +296,6 @@ article > p {
   background-image: url(../img/Card2.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.article_5 > span {
-  background-color: var(--point-color);
-  width: 157px;
-  height: 40px;
-
-  text-align: center;
-  line-height: 40px;
 }
 
 .article_5 p {
@@ -356,8 +368,6 @@ article > p {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
   background: #1d1f24;
 }
 
@@ -369,28 +379,37 @@ footer {
   opacity: 0.7;
 }
 
-.footer_menu {
+.footer_left {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  padding-left: 38px;
 }
 
-footer ul {
-  width: 640px;
+.footer_menu {
+  padding: 50px 39px;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 12px;
 
   font-size: 14px;
   color: white;
 }
 
-footer li {
-  margin-right: 111px;
+.footer_menu li {
+  width: 20%;
+  letter-spacing: 1.75px;
 }
 
 .footer_right {
   display: flex;
   flex-direction: column;
+
+  margin-left: auto;
+  margin-right: 40px;
 }
 
 .footer_right span {
@@ -401,6 +420,10 @@ footer li {
   margin-right: 19px;
 }
 
+.email_sns {
+  margin-bottom: 15px;
+}
+
 .footer_right img {
   margin-right: 20px;
 }
@@ -409,13 +432,28 @@ footer li {
   text-align: right;
 }
 
+.email_form {
+  display: flex;
+  align-items: center;
+}
+
 .email_input {
+  width: 180px;
+  height: 35px;
+
   background-color: white;
-  padding: 7px 15px;
+  padding: 0 15px;
 }
 
 .email_btn {
+  width: 120px;
+  height: 35px;
+
   background-color: var(--point-color);
-  padding: 8px 27px;
+  padding: 1px 27px;
   color: white;
+
+  font-family: var(--main-font);
+  font-size: 12px;
+  letter-spacing: 1.5px;
 }
